@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Andres Angulo" />
+    <title>Passenger satisfaction Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="img/plane.png" type="image/x-icon" />
+    <script src="main.js" type="module"></script>
+  </head>
+
+  <body>
+    <br />
+    <header class="header">
+      <h1 id="title">Airline passenger satisfaction survey</h1>
+      <p id="description">Thank you for taking the time to help us improve</p>
+    </header>
+
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name"> Name</label
+        ><input
+          id="name"
+          name="Name"
+          class="form-control"
+          required
+          placeholder="Enter your name"
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="email-label">Email</label
+        ><input
+          id="email"
+          name="Email"
+          class="form-control"
+          type="email"
+          required
+          placeholder="Enter your Email"
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="number-label">Age <span class="clue">(optional)</span></label
+        ><input
+          id="number"
+          name="Age"
+          class="form-control"
+          type="number"
+          min="10"
+          max="99"
+          placeholder="Age"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="dropdown1">Purpose of you Trip?</label>
+        <select id="dropdown1" class="form-control" name="Purpose of you Trip?">
+          <option disable select value>Select one please</option>
+          <option value="Holiday">Holiday / Vacation</option>
+          <option value="Business">Business</option>
+          <option value="Family">Family</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <br />
+
+      <div class="form-group">
+        <label>Gender</label>
+        <label>
+          <input
+            type="radio"
+            name="gender"
+            value="Male"
+            class="input-radio"
+            checked
+          />Male</label
+        >
+
+        <label>
+          <input
+            type="radio"
+            name="gender"
+            value="Female"
+            class="input-radio"
+          />Female</label
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="dropdown2">How often do you fly?</label>
+        <select
+          id="dropdown2"
+          class="form-control"
+          name="How often do you fly?"
+        >
+          <option disable select value>Select an option</option>
+          <option value="2-3-times-a-month">2-3 times a month</option>
+          <option value="once-a-month">Once a month</option>
+          <option value="few-times-a-year">A few times a year</option>
+          <option value="Once-a-year">Once a year or less</option>
+          <option value="never">Never</option>
+        </select>
+      </div>
+      <br />
+      <div class="form-group">
+        <label
+          >What would you like to see improved?
+          <span class="clue">(Check all that apply)</span></label
+        >
+        <label for="food">
+          <input
+            id="food"
+            type="checkbox"
+            name="improve"
+            value="Airplane Food and Options"
+            class="input-checkbox"
+          />Airplane Food and Options</label
+        >
+
+        <label for="entertainment">
+          <input
+            id="entertainment"
+            type="checkbox"
+            name="improve"
+            value="Wi-Fi/Entertainment"
+            class="input-checkbox"
+          />
+          Wi-Fi/Entertainment</label
+        >
+
+        <label for="lounge">
+          <input
+            id="lounge"
+            type="checkbox"
+            name="improve"
+            value="Lounge"
+            class="input-checkbox"
+          />
+          Lounge</label
+        >
+
+        <label for="amenities">
+          <input
+            id="amenities"
+            type="checkbox"
+            name="improve"
+            value="Amenities"
+            class="input-checkbox"
+          />
+          Amenities</label
+        >
+
+        <label for="vip">
+          <input
+            id="vip"
+            type="checkbox"
+            name="improve"
+            value=" VIP / First Class"
+            class="input-checkbox"
+          />
+          VIP / First Class</label
+        >
+
+        <label for="seats">
+          <input
+            id="seats"
+            type="checkbox"
+            name="improve"
+            value="Seats"
+            class="input-checkbox"
+          />
+          Seats</label
+        >
+
+        <label for="cleanliness">
+          <input
+            id="cleanliness"
+            type="checkbox"
+            name="improve"
+            value="Cleanliness"
+            class="input-checkbox"
+          />
+          Cleanliness</label
+        >
+
+        <label for="punctuality">
+          <input
+            id="punctuality"
+            type="checkbox"
+            name="improve"
+            value="Punctuality"
+            class="input-checkbox"
+          />
+          Punctuality</label
+        >
+
+        <label for="customer-service">
+          <input
+            id="customer-service"
+            type="checkbox"
+            name="improve"
+            value="Customer Service"
+            class="input-checkbox"
+          />
+          Customer Service
+        </label>
+
+        <label for="none">
+          <input
+            id="none"
+            type="checkbox"
+            name="improve"
+            value="None"
+            class="input-checkbox"
+          />
+          None
+        </label>
+      </div>
+      <br />
+      <div class="form-group">
+        <label>Any comments or suggestions?</label>
+
+        <textarea
+          name="comments"
+          id="comments"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="submit-button" id="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
