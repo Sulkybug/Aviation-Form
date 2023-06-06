@@ -92,15 +92,16 @@ option {
 .form-control {
   display: block;
   width: 94%;
-  height: 2.155rem;
+  height: 2rem;
   padding: 0.375rem 0.75rem;
   color: #495057;
-  background-color: #fff;
+  background-color: rgba(250, 235, 215, 0.911);
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 .clue {
   margin-left: 0.25rem;
   font-size: 0.9rem;
@@ -113,6 +114,7 @@ option {
   margin-right: 0.625rem;
   min-height: 1.25rem;
   min-width: 1.25rem;
+  accent-color: rgb(248, 97, 80);
 }
 
 input[type="radio" i] {
@@ -136,7 +138,7 @@ input[type="radio" i] {
   display: block;
   width: 98%;
   padding: 0.75rem;
-  background: rgba(81, 188, 5, 0.678);
+  background: rgba(248, 97, 80, 0.644);
   color: inherit;
   border-radius: 2px;
   cursor: pointer;
@@ -149,6 +151,24 @@ button:active {
   background-position: 0 0;
   color: rgb(81, 188, 5);
   border: 1px solid lightgreen;
-  transform: scale(1.05);
-  font-size: 20px;
+  transform: scale(1.02);
+  font-size: 17px;
+  transition: 0.5s;
+}
+
+option:checked {
+  color: #fff;
+  background-color: rgb(248, 97, 80);
+}
+
+option {
+  color: black;
+  background-color: #fff;
+}
+
+select:active,
+select:hover {
+  outline-color: rgb(250, 162, 0);
+  color: rgb(81, 188, 5);
+  background-color: rgba(42, 68, 1, 0.452);
 }
