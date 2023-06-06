@@ -132,6 +132,7 @@ input[type="radio" i] {
   width: 95%;
   padding: 0.625rem;
   resize: vertical;
+    background-color: rgba(250, 235, 215, 0.911);
 }
 
 .submit-button {
